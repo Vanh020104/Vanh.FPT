@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    body {
+        background: rgb(248, 248, 217);
+    }
+    
+ 
+    .santa .head .face .redhat .redpart:after {
+        content: " ";
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background: #FF8DC7;
+        width: 20px;
+        height: 50px;
+    } 
+    img{
+        border-radius:0 20px 0 30px;
+        border-bottom: 30px;
+        border: 3px solid rgb(255, 0, 0);
+        
+    }
+
+    h5{
+        text-align: center;
+        font-size: 20px;
+        border: 3px solid rgb(4, 255, 0);
+        background-color: rgb(255, 247, 247);
+         color: rgb(0, 0, 0);
+         margin-bottom: 500px;
+         margin-left: 0px;
+         position: absolute;
+         bottom: 4;
+    }
+     h6{
+        font-style: italic;
+        font-size: 18px;
+        color: #000000;
+     }
+    .message {                   
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        margin-top: 80px;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        color: #ec0f0f;
+        font-family: 'Mountains of Christmas';
+    }
+ 
+    .message h1 {
+        font-style: normal;
+        font-size:55px;
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+    p{
+        text-indent:50px;
+        border-style:dotted;
+        border-color: #e0ff31;
+        border-top-left-radius: 20px;
+        border-top: -100px;
+        padding: 20px;
+        font-family: cursive;
+        color: #040303;
+        bottom: 4;
+    }
+    .message h2 {
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+        white-space: nowrap;
+    }
+ 
+    .message h2 a {
+        color: #000000;
+        opacity: 0.8;
+    }
+ 
+    .message h2 a:hover {
+        opacity: 4;
+    }
+ 
+    @-webkit-keyframes bodyLaugh {
+        0% {
+            top: 0px;
+        }
+ 
+        2% {
+            top: -3px;
+        }
+ 
+        4% {
+            top: 0px;
+        }
+ 
+        8% {
+            top: -3px;
+        }
+ 
+        10% {
+            top: 0px;
+        }
+ 
+        12% {
+            top: -3px;
+        }
+ 
+        14% {
+            top: 0px;
+        }
+ 
+        18% {
+            top: -3px;
+        }
+ 
+        20% {
+            top: 0px;
+        }
+ 
+        22% {
+            top: -3px;
+        }
+ 
+        24% {
+            top: 0px;
+        }
+ 
+        28% {
+            top: -3px;
+        }
+ 
+        30% {
+            top: 0px;
+        }
+ 
+        100% {
+            top: 0px;
+        }
+    }
+ 
+    @-moz-keyframes bodyLaugh {
+        0% {
+            top: 0px;
+        }
+ 
+        2% {
+            top: -3px;
+        }
+ 
+        4% {
+            top: 0px;
+        }
+ 
+        8% {
+            top: -3px;
+        }
+ 
+        10% {
+            top: 0px;
+        }
+ 
+        12% {
+            top: -3px;
+        }
+ 
+        14% {
+            top: 0px;
+        }
+ 
+        18% {
+            top: -3px;
+        }
+ 
+        20% {
+            top: 0px;
+        }
+ 
+        22% {
+            top: -3px;
+        }
+ 
+        24% {
+            top: 0px;
+        }
+ 
+        28% {
+            top: -3px;
+        }
+ 
+        30% {
+            top: 0px;
+        }
+ 
+        100% {
+            top: 0px;
+        }
+    }
+ 
+    @-ms-keyframes bodyLaugh {
+        0% {
+            top: 0px;
+        }
+ 
+        2% {
+            top: -3px;
+        }
+ 
+        4% {
+            top: 0px;
+        }
+ 
+        8% {
+            top: -3px;
+        }
+ 
+        10% {
+            top: 0px;
+        }
+ 
+        12% {
+            top: -3px;
+        }
+ 
+        14% {
+            top: 0px;
+        }
+ 
+        18% {
+            top: -3px;
+        }
+ 
+        20% {
+            top: 0px;
+        }
+ 
+        22% {
+            top: -3px;
+        }
+ 
+        24% {
+            top: 0px;
+        }
+ 
+        28% {
+            top: -3px;
+        }
+ 
+        30% {
+            top: 0px;
+        }
+ 
+        100% {
+            top: 0px;
+        }
+    }
+ 
+    @keyframes bodyLaugh {
+        0% {
+            top: 0px;
+        }
+ 
+        2% {
+            top: -3px;
+        }
+ 
+        4% {
+            top: 0px;
+        }
+ 
+        8% {
+            top: -3px;
+        }
+ 
+        10% {
+            top: 0px;
+        }
+ 
+        12% {
+            top: -3px;
+        }
+ 
+        14% {
+            top: 0px;
+        }
+ 
+        18% {
+            top: -3px;
+        }
+ 
+        20% {
+            top: 0px;
+        }
+ 
+        22% {
+            top: -3px;
+        }
+ 
+        24% {
+            top: 0px;
+        }
+ 
+        28% {
+            top: -3px;
+        }
+ 
+        30% {
+            top: 0px;
+        }
+ 
+        100% {
+            top: 0px;
+        }
+    }
+ 
+    @-webkit-keyframes beardLaugh {
+        0% {
+            bottom: -28px;
+        }
+ 
+        2% {
+            bottom: -30px;
+        }
+ 
+        4% {
+            bottom: -28px;
+        }
+ 
+        8% {
+            bottom: -30px;
+        }
+ 
+        10% {
+            bottom: -28px;
+        }
+ 
+        12% {
+            bottom: -30px;
+        }
+ 
+        14% {
+            bottom: -28px;
+        }
+ 
+        18% {
+            bottom: -30px;
+        }
+ 
+        20% {
+            bottom: -28px;
+        }
+ 
+        22% {
+            bottom: -30px;
+        }
+ 
+        24% {
+            bottom: -28px;
+        }
+ 
+        28% {
+            bottom: -30px;
+        }
+ 
+        30% {
+            bottom: -28px;
+        }
+ 
+        100% {
+            bottom: -28px;
+        }
+    }
+ 
+    @-moz-keyframes beardLaugh {
+        0% {
+            bottom: -28px;
+        }
+ 
+        2% {
+            bottom: -30px;
+        }
+ 
+        4% {
+            bottom: -28px;
+        }
+ 
+        8% {
+            bottom: -30px;
+        }
+ 
+        10% {
+            bottom: -28px;
+        }
+ 
+        12% {
+            bottom: -30px;
+        }
+ 
+        14% {
+            bottom: -28px;
+        }
+ 
+        18% {
+            bottom: -30px;
+        }
+ 
+        20% {
+            bottom: -28px;
+        }
+ 
+        22% {
+            bottom: -30px;
+        }
+ 
+        24% {
+            bottom: -28px;
+        }
+ 
+        28% {
+            bottom: -30px;
+        }
+ 
+        30% {
+            bottom: -28px;
+        }
+ 
+        100% {
+            bottom: -28px;
+        }
+    }
+ 
+    @-ms-keyframes beardLaugh {
+        0% {
+            bottom: -28px;
+        }
+ 
+        2% {
+            bottom: -30px;
+        }
+ 
+        4% {
+            bottom: -28px;
+        }
+ 
+        8% {
+            bottom: -30px;
+        }
+ 
+        10% {
+            bottom: -28px;
+        }
+ 
+        12% {
+            bottom: -30px;
+        }
+ 
+        14% {
+            bottom: -28px;
+        }
+ 
+        18% {
+            bottom: -30px;
+        }
+ 
+        20% {
+            bottom: -28px;
+        }
+ 
+        22% {
+            bottom: -30px;
+        }
+ 
+        24% {
+            bottom: -28px;
+        }
+ 
+        28% {
+            bottom: -30px;
+        }
+ 
+        30% {
+            bottom: -28px;
+        }
+ 
+        100% {
+            bottom: -28px;
+        }
+    }
+ 
+    @keyframes beardLaugh {
+        0% {
+            bottom: -28px;
+        }
+ 
+        2% {
+            bottom: -30px;
+        }
+ 
+        4% {
+            bottom: -28px;
+        }
+ 
+        8% {
+            bottom: -30px;
+        }
+ 
+        10% {
+            bottom: -28px;
+        }
+ 
+        12% {
+            bottom: -30px;
+        }
+ 
+        14% {
+            bottom: -28px;
+        }
+ 
+        18% {
+            bottom: -30px;
+        }
+ 
+        20% {
+            bottom: -28px;
+        }
+ 
+        22% {
+            bottom: -30px;
+        }
+ 
+        24% {
+            bottom: -28px;
+        }
+ 
+        28% {
+            bottom: -30px;
+        }
+ 
+        30% {
+            bottom: -28px;
+        }
+ 
+        100% {
+            bottom: -28px;
+        }
+    }
+ 
+    @-webkit-keyframes headLaugh {
+        0% {
+            bottom: 83px;
+        }
+ 
+        45% {
+            bottom: 83px;
+        }
+ 
+        50% {
+            bottom: 90px;
+        }
+ 
+        92% {
+            bottom: 90px;
+        }
+ 
+        98% {
+            bottom: 83px;
+        }
+ 
+        100% {
+            bottom: 83px;
+        }
+    }
+ 
+    @-moz-keyframes headLaugh {
+        0% {
+            bottom: 83px;
+        }
+ 
+        45% {
+            bottom: 83px;
+        }
+ 
+        50% {
+            bottom: 90px;
+        }
+ 
+        92% {
+            bottom: 90px;
+        }
+ 
+        98% {
+            bottom: 83px;
+        }
+ 
+        100% {
+            bottom: 83px;
+        }
+    }
+ 
+    @-ms-keyframes headLaugh {
+        0% {
+            bottom: 83px;
+        }
+ 
+        45% {
+            bottom: 83px;
+        }
+ 
+        50% {
+            bottom: 90px;
+        }
+ 
+        92% {
+            bottom: 90px;
+        }
+ 
+        98% {
+            bottom: 83px;
+        }
+ 
+        100% {
+            bottom: 83px;
+        }
+    }
+ 
+    @keyframes headLaugh {
+        0% {
+            bottom: 83px;
+        }
+ 
+        45% {
+            bottom: 83px;
+        }
+ 
+        50% {
+            bottom: 90px;
+        }
+ 
+        92% {
+            bottom: 90px;
+        }
+ 
+        98% {
+            bottom: 83px;
+        }
+ 
+        100% {
+            bottom: 83px;
+        }
+    }
+ 
+    @-webkit-keyframes mouthLaugh {
+        0% {
+            width: 20px;
+        }
+ 
+        45% {
+            width: 20px;
+        }
+ 
+        50% {
+            width: 15px;
+        }
+ 
+        92% {
+            width: 15px;
+        }
+ 
+        98% {
+            width: 20px;
+        }
+ 
+        100% {
+            width: 20px;
+        }
+    }
+ 
+    @-moz-keyframes mouthLaugh {
+        0% {
+            width: 20px;
+        }
+ 
+        45% {
+            width: 20px;
+        }
+ 
+        50% {
+            width: 15px;
+        }
+ 
+        92% {
+            width: 15px;
+        }
+ 
+        98% {
+            width: 20px;
+        }
+ 
+        100% {
+            width: 20px;
+        }
+    }
+ 
+    @-ms-keyframes mouthLaugh {
+        0% {
+            width: 20px;
+        }
+ 
+        45% {
+            width: 20px;
+        }
+ 
+        50% {
+            width: 15px;
+        }
+ 
+        92% {
+            width: 15px;
+        }
+ 
+        98% {
+            width: 20px;
+        }
+ 
+        100% {
+            width: 20px;
+        }
+    }
+ 
+    @keyframes mouthLaugh {
+        0% {
+            width: 20px;
+        }
+ 
+        45% {
+            width: 20px;
+        }
+ 
+        50% {
+            width: 15px;
+        }
+ 
+        92% {
+            width: 15px;
+        }
+ 
+        98% {
+            width: 20px;
+        }
+ 
+        100% {
+            width: 20px;
+        }
+    }
+ 
+ 
+    /* abc  */
+ 
+.christmas{
+    display: none;
+    text-align: center;
+
+}
+
+
+.christmas:before {
+  content: "";
+  text-align: center;
+  border: 3px solid aqua;
+  position: absolute;
+  top: 0;
+  left: -50px; ;
+  width: 110%;
+  height: 200%;
+  transform: rotate(-10deg);
+  background-image: radial-gradient(circle at 30% 30%, rgb(0, 255, 47) 1.5%, transparent 2.5%), radial-gradient(circle at 80% 70%, rgb(255, 0, 0) 1.5%, transparent 2.5%), radial-gradient(circle at 30% 50%, rgb(51, 0, 255) 2%, transparent 2%), radial-gradient(circle at 90% 95%, rgb(0, 229, 255) 1%, transparent 2%);
+  background-size: 40% 30%;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  -webkit-animation: snow 3s linear infinite ;
+          animation: snow 3s linear infinite ;
+
+}
+@-webkit-keyframes snow {
+  100% {
+    background-position: 0px 200px, 0 200px, 0px 200px, 0px 200px;
+  }
+}
+@keyframes snow {
+  100% {
+    background-position: 0px 200px, 0 200px, 0px 200px, 0px 200px;
+  }
+}
+ 
+ 
+</style>
+ 
+<body id="body" style="display: flex; align-items: center;justify-content: center;height: 80vh;">
+    
+    <h5>❤️CLASS 12D❤️ :  </h5>
+    <img src="https://media.istockphoto.com/id/1293449386/vi/vec-to/b%E1%BA%A5m-con-tr%E1%BB%8F-tay-m%C3%A1y-t%C3%ADnh-con-tr%E1%BB%8F-tay-b%E1%BA%A5m-hi%E1%BB%87u-%E1%BB%A9ng-minh-h%E1%BB%8Da-vect%C6%A1.jpg?s=1024x1024&w=is&k=20&c=HHPE3iBZxBhRQquNZyqYifCojt4_i0X1P3wPr2dLvXE=" width="50px" >
+
+   <a href="https://www.vectorstock.com/royalty-free-vector/a-merry-christmas-template-with-head-vector-1730269"></a>
+    <div id="btn" style="width:50%;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 150 88.4" enable-background="new 0 0 150 500" xml:space="preserve"  rgb(255, 0, 0); role="img" aria-label="Valentine Envelope Line Icon">
+            <path d="M60.1,38.6c3.4-3.4,9-3.4,12.4,0l1.2,1.1l1.2-1.1c3.4-3.4,9-3.4,12.4,0c0.4,0.4,0.7,0.7,1,1.1L140,4.8H10.1  L60.1,38.6L60.1,38.6z" style="fill: none;"></path>
+            <path d="M89.8,44.8c0,2.3-0.9,4.6-2.6,6.2L75.4,62.9c-0.9,0.5-1.1,0.7-1.7,0.7s-1.2-0.2-1.7-0.7L60.1,51  c-1.7-1.7-2.6-3.9-2.6-6.2c0-0.7,0.1-1.3,0.2-2L4.8,7.2v75.4c0,0.6,0.5,1,1,1h138.3c0.6,0,1-0.5,1-1V7.2L89.8,44.5  C89.8,44.6,89.8,44.7,89.8,44.8z" style="fill: none;"></path>
+            <g id="__id2_s23t51u2c"><path d="M148.8,2.3c0-0.1-0.1-0.2-0.2-0.3c-0.3-0.3-0.6-0.6-0.9-0.8c-0.4-0.2-0.8-0.3-1.2-0.3c0.4,0,0.9,0.1,1.2,0.3  c-1-0.8-2.2-1.2-3.6-1.2H5.9C4.5,0,3.3,0.5,2.3,1.2C2.1,1.3,1.9,1.5,1.8,1.7C1.7,1.8,1.5,1.9,1.4,2C0.5,3.1,0,4.4,0,5.9v76.7  c0,3.2,2.6,5.9,5.9,5.9h138.3c3.2,0,5.9-2.6,5.9-5.9V5.9C150,4.5,149.5,3.3,148.8,2.3z M147.9,5.4l-2.7,1.8v75.4c0,0.6-0.5,1-1,1  H5.9c-0.6,0-1-0.5-1-1V7.2L2.1,5.3l2.7,1.8V5.9c0-0.6,0.5-1,1-1h0.1c-0.6,0-1,0.5-1,1v1.3l52.9,35.6c0.3-1.6,1.1-3.1,2.3-4.2  l-50-33.7H10L4.8,1.3L10,4.8h130L88.2,39.7c1,1.4,1.5,3,1.6,4.8l55.3-37.3V5.9c0.1-0.6-0.4-1.1-1-1.1h0.1c0.6,0,1,0.5,1,1v1.3  L147.9,5.4c0.7-0.5,1-1.3,1.1-2C149,4.2,148.6,5,147.9,5.4z" style="fill: rgb(255, 0, 0);"></path></g>
+            <g id="__id3_s23t51u2c"><path d="M90.2,43.7c-0.1-1.8-0.6-3.4-1.6-4.9c-0.3-0.4-0.6-0.8-1-1.2c-3.5-3.5-9.2-3.5-12.7,0l-1.2,1.2l-1.2-1.2  c-3.5-3.5-9.2-3.5-12.7,0c0,0,0,0,0,0c-1.2,1.2-2,2.7-2.4,4.4c-0.1,0.6-0.2,1.3-0.2,2c0,2.4,0.9,4.7,2.6,6.4L72,62.5  c0.5,0.5,1.1,0.7,1.8,0.7c0.6,0,1.3-0.2,1.8-0.7l12.1-12.1c1.7-1.7,2.6-4,2.6-6.4C90.3,43.9,90.2,43.8,90.2,43.7z M73.7,57.3  L63.3,46.9c-0.4-0.4-0.7-0.9-0.9-1.5c-0.2-0.4-0.2-0.9-0.2-1.4c0-1.1,0.4-2.1,1.2-2.9c0.2-0.2,0.5-0.4,0.8-0.6  c0.6-0.4,1.3-0.6,2.1-0.6c1.1,0,2.1,0.4,2.9,1.2l2.9,2.9c1,1,2.5,1,3.5,0l2.9-2.9c1.6-1.6,4.1-1.6,5.7,0c0.1,0.1,0.2,0.3,0.4,0.4  c1.2,1.6,1.1,3.8-0.4,5.3l-2.9,2.9L73.7,57.3z" style="fill: rgb(15, 221, 67);"></path></g>
+            </svg>
+            <h1 style="text-align: center;font-size:30px;color:#ff0000">---PLEASE CLICK HERE 😁😁😁---</h1>
+            
+    </div>
+    
+   <div class="christmas" >
+    <div class="message">
+        <img src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-birthday-cake-icon-for-your-project-png-image_4813613.jpg" width="500px">
+        <p>Wishing my teacher Nhan Le a happy "Vietnamese teacher's day on November 20", her work as a teacher is always smooth, guiding many generations of other students.Wish you a good health, peace and happiness.Wishing the mother round and square children😂😂.You are the world’s best teacher! Thank you for everything!!!<br>
+        ...............end...............</p>
+        <h1>Happy Teachers Day!!!</h1>
+        <h2>---V.anh---</h2>
+        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/310979492_469655848609974_1104832275642843181_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=WF9kzTOGaLgAX-BfwUk&_nc_ht=scontent.fhan14-1.fna&oh=03_AdQizp2AcXMXWU6rEXrq4NFYIKI-s83I35IaT4XWM8pSeg&oe=639F210A" width="150px" alt="Nhan Le" title="Nhan Le,Hai Yen">
+        <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/314982350_2016619378729074_2442611279544643237_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=X5wU3NNqxUoAX8nHYkd&_nc_ht=scontent.fhan14-3.fna&oh=03_AdTtWTMbBGzJYJytvmDdy4CWEOuPDYKVeQ35szaQ3hdfbw&oe=639F2843" width="158px" alt="Nhan Le" title="Nhan Le">
+        <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/310784752_533815888261738_6470602519155135060_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=zxNkHEBuCRsAX9I9-AL&_nc_ht=scontent.fhan14-3.fna&oh=03_AdTrSbY4cNYMAic97VaZng4TKXU_WBTRXwnbD_bgkPir7w&oe=639F18E0" width="190px" alt="Nhan Le" title="Nhan Le"><br><br><br>
+        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/310351064_859842441871375_7617800051300762394_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=vnZVLGJHOI0AX_jB6hX&_nc_oc=AQnQyNlqDVW0zDf5zYVsbPv0p-wRWcqVOsforudRLNyCs4H1PVnXC_enVwQIYUIzZ_Y&_nc_ht=scontent.fhan14-1.fna&oh=03_AdRBpajdFrSm8Ihyqem1fkMTSoZkEOa4tud7IBgs7dOuSw&oe=639F1718" width="175px" alt="Nhan Le" title="Nhan Le">
+        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/315525418_499523268808682_4688079814504807994_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7h9pRXxNB7oAX89RxU7&_nc_ht=scontent.fhan14-1.fna&oh=03_AdRUMFBticG11bis2RTLkejpjy1vo5oAMxI_Vo0JXyzKrQ&oe=639F1F1D" width="170px"  alt="Nhan Le" title="Nhan Le">
+        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/314656721_2122068191315442_5687017315485429669_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=2LzFPRnQ2vwAX9Mtu_Y&_nc_ht=scontent.fhan14-1.fna&oh=03_AdQxrssVrZlC15lwPnXrT_6MCpI-XW1Va3GjEgwy7il1gA&oe=639F2FD0" alt="Nhan Le" title="Nhan Le" width="180px">
+         <h6>---Thank you very much---</h6>
+    </div>
+    <div class="window ">
+        <div class="santa">
+            <div class="head">
+                <div class="face">
+                    <div class="redhat">
+                        <div class="whitepart"></div>
+                        <div class="redpart"></div>
+                        <div class="hatball"></div>
+                    </div>
+                    <div class="eyes"></div>
+                    <div class="beard">
+                        <div class="nouse"></div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+                <div class="ears"></div>
+            </div>
+            <div class="body"></div>
+        </div>
+    </div>
+   
+   </div>
+   <script>
+        document.querySelector("#btn").onclick = function (){
+            document.querySelector("#btn").style.display='none';
+            document.querySelector(".christmas").style.display='block';
+            document.querySelector("#body").style.background="#FF8DC7";
+            
+        }
+   </script>
+</body>
+ 
+</html>
